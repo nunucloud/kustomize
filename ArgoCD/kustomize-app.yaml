@@ -14,8 +14,8 @@ spec:
     namespace: default
     server: 'https://kubernetes.default.svc'
   source:
-    path: Kustomize/overlays/dev
-    repoURL: 'git@github.com:nunucloud/sre-test.git'
+    path: overlays/dev
+    repoURL: 'git@github.com:nunucloud/kustomize.git'
     targetRevision: main
     directory:
       recurse: true
@@ -33,7 +33,5 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-      - ApplyOutOfSyncOnly=true
       - PrunePropagationPolicy=foreground
       - PruneLast=true
-      - Replace=false
