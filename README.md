@@ -9,6 +9,7 @@
 └── overlays
     └── dev
         └── kustomization.yaml
+```
 ## PATH
 ```
 cd overlays/dev/
