@@ -3,7 +3,7 @@ kind: Kustomization
 images:
 - name: patnmat/sre-test
   newTag: latest
-patchesStrategicMerge:
+patches:
 - secret.yaml
 resources:
 - ../../base
